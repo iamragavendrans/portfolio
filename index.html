@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ragavendran S - QA & AI side-scrolling portfolio">
+    <title>Ragavendran S | SDET & AI Interactive Journey</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Space+Grotesk:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- GSAP & Plugins -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+</head>
+<body>
+
+    <!-- Parallax Background Layer -->
+    <div id="parallax-bg"></div>
+
+    <!-- Sticky Side Navigation -->
+    <nav id="side-nav">
+        <a href="#intro" class="nav-link" title="Introduction"><i class="fa-solid fa-house"></i></a>
+        <a href="#experience" class="nav-link" title="Experience"><i class="fa-solid fa-briefcase"></i></a>
+        <a href="#skills" class="nav-link" title="Skills"><i class="fa-solid fa-bolt"></i></a>
+        <a href="#awards" class="nav-link" title="Awards"><i class="fa-solid fa-trophy"></i></a>
+        <a href="#contact" class="nav-link" title="Contact & Resume"><i class="fa-solid fa-envelope"></i></a>
+    </nav>
+
+    <!-- Main Scroll Track -->
+    <div class="scroll-track">
+        <div class="horizontal-container">
+            
+            <!-- Section 1: Hero -->
+            <section id="intro" class="h-panel hero-panel">
+                <div class="glass-board">
+                    <h1 class="main-title">Ragavendran S</h1>
+                    <h2 class="subtitle">Senior Full-Stack SDET | AI Engineer</h2>
+                    <p class="summary">Full-stack SDET with 7+ years owning end-to-end quality across UI, API, and mobile testing, with hands-on AI engineering applied to test generation, QA tooling, and process automation.</p>
+                    <div class="instruction">
+                        ↓ SCROLL DOWN TO MOVE RIGHT →
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 2: Continuous Timeline & Projects -->
+            <section id="experience" class="h-panel timeline-panel">
+                
+                <div class="timeline-column">
+                    <div class="milestone clickable" data-modal="infosys">
+                        <img class="real-company-logo" src="assets/infosys.png" alt="Infosys Logo">
+                        <span class="year">Oct 2018 - Jun 2022</span>
+                        <h3>Infosys Limited</h3>
+                        <p>Test Engineer<br>
+                          <span class="action-links">
+                            <span class="view-more">View Full Impact <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+                          </span>
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="milestone divider">→</div>
+                
+                <div class="timeline-column">
+                    <div class="milestone clickable" data-modal="comcast">
+                        <img class="real-company-logo" src="assets/comcast.png" alt="Comcast Logo">
+                        <span class="year">Jun 2022 - Feb 2025</span>
+                        <h3>Comcast India</h3>
+                        <p>SDET - 3<br>
+                          <span class="action-links">
+                            <span class="view-more">View Full Impact <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+                            <span class="view-project-btn" data-project="project-comcast"><i class="fa-solid fa-rocket"></i> Project</span>
+                          </span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="milestone divider">→</div>
+
+                <div class="timeline-column">
+                    <div class="milestone clickable" data-modal="hcl">
+                        <img class="real-company-logo" src="assets/hcl.png" alt="HCL Logo">
+                        <span class="year">Mar 2025 - Apr 2025</span>
+                        <h3>HCL Technologies</h3>
+                        <p>Technical Lead<br>
+                          <span class="action-links">
+                            <span class="view-more">View Full Impact <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+                            <span class="view-project-btn" data-project="project-hcl"><i class="fa-solid fa-flask"></i> Project</span>
+                          </span>
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="milestone divider">→</div>
+                
+                <div class="timeline-column">
+                    <div class="milestone clickable highlight-milestone" data-modal="ilink">
+                        <img class="real-company-logo" src="assets/ilink.png" alt="iLink Logo">
+                        <span class="year">Jul 2025 - Present</span>
+                        <h3>iLink Digital</h3>
+                        <p>Test Specialist<br>
+                          <span class="action-links">
+                            <span class="view-more">View Full Impact <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+                            <span class="view-project-btn" data-project="project-ilink"><i class="fa-solid fa-database"></i> Project</span>
+                          </span>
+                        </p>
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- Section 3: Skills Matrix -->
+            <section id="skills" class="h-panel skills-panel">
+                <h2 class="zone-title">The Skills Matrix</h2>
+                <div class="skills-cluster">
+                    <div class="skill-orb"><i class="fa-solid fa-vial-circle-check"></i> Playwright<span class="skill-tooltip">Used at iLink Digital to cut flaky tests by 48%</span></div>
+                    <div class="skill-orb"><i class="fa-solid fa-robot"></i> Selenium WebDriver<span class="skill-tooltip">Used at Comcast to achieve 50% application coverage</span></div>
+                    <div class="skill-orb"><i class="fa-solid fa-mobile-screen"></i> Appium (Android/iOS)<span class="skill-tooltip">Used at Infosys to improve build feedback by 30%</span></div>
+                    <div class="skill-orb"><i class="fa-brands fa-java"></i> Java<span class="skill-tooltip">Core language used for WebDriver, REST Assured at Comcast</span></div>
+                    <div class="skill-orb"><i class="fa-brands fa-js"></i> TypeScript / JS<span class="skill-tooltip">Core language for Playwright migration at iLink</span></div>
+                    <div class="skill-orb"><i class="fa-brands fa-python"></i> Python<span class="skill-tooltip">Used for Retention Rocket churn prediction platform</span></div>
+                    <div class="skill-orb"><i class="fa-solid fa-server"></i> REST Assured / FastAPI<span class="skill-tooltip">Used at Comcast and HCL for contract testing and test generation APIs</span></div>
+                    <div class="skill-orb"><i class="fa-solid fa-brain"></i> LLM Test Generation<span class="skill-tooltip">Used at HCL to reduce manual test authoring by 60%</span></div>
+                    <div class="skill-orb"><i class="fa-solid fa-infinity"></i> CI/CD Jenkins/GitLab<span class="skill-tooltip">Used continuously across iLink, Comcast, Infosys</span></div>
+                    <div class="skill-orb">Karate<span class="skill-tooltip">Used at Infosys for efficient API contract tests</span></div>
+                    <div class="skill-orb">Cucumber BDD<span class="skill-tooltip">Used at Comcast for BDD test framework</span></div>
+                    <div class="skill-orb">TestNG / JMeter<span class="skill-tooltip">Standard assertion and performance testing</span></div>
+                    <div class="skill-orb">BrowserStack<span class="skill-tooltip">Used for cross-device mobile testing</span></div>
+                    <div class="skill-orb">SQL / BigQuery<span class="skill-tooltip">Used at Infosys & Hackathon for backend validation</span></div>
+                    <div class="skill-orb">Docker / Azure DevOps<span class="skill-tooltip">Infrastructure containerization</span></div>
+                    <div class="skill-orb">Google Gemini / Vertex AI<span class="skill-tooltip">Used in Retention Rocket hackathon prototype</span></div>
+                    <div class="skill-orb">System Design<span class="skill-tooltip">Architecture and test framework design</span></div>
+                </div>
+            </section>
+
+            <!-- Section 4: Awards -->
+            <section id="awards" class="h-panel awards-panel">
+                <h2 class="zone-title">Awards & Honors</h2>
+                <div class="awards-vertical-timeline">
+                    <div class="award-card">
+                        <i class="fa-solid fa-award award-icon"></i>
+                        <h3>Client Honorary Mention</h3>
+                        <span class="year">2025</span>
+                        <p>Built Retention Rocket, an AI-driven churn prediction prototype at a client-hosted hackathon.</p>
+                    </div>
+                    <div class="award-card">
+                        <i class="fa-solid fa-star award-icon"></i>
+                        <h3>Sky Stars Award</h3>
+                        <span class="year">2024</span>
+                        <p>Awarded for JIRA JQL compliance automation that reduced team overhead by 30-50%.</p>
+                    </div>
+                    <div class="award-card">
+                        <i class="fa-solid fa-trophy award-icon"></i>
+                        <h3>Champ Award</h3>
+                        <span class="year">2023</span>
+                        <p>Automated Excel-based metrics improving operational reporting efficiency across teams.</p>
+                    </div>
+                    <div class="award-card">
+                        <i class="fa-solid fa-medal award-icon"></i>
+                        <h3>First Time Right</h3>
+                        <span class="year">2022</span>
+                        <p>Delivered automation scripts for a new feature achieving UAT sign-off with near-zero defects.</p>
+                    </div>
+                    <div class="award-card">
+                        <i class="fa-solid fa-bolt award-icon"></i>
+                        <h3>Rising Star</h3>
+                        <span class="year">2021</span>
+                        <p>Self-initiated automation on a safety-critical platform, exceeding expectations within the first year.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 5: Contact & Resume -->
+            <section id="contact" class="h-panel contact-panel">
+                <div class="glass-board final-board">
+                    <h2>End of the Timeline.</h2>
+                    <p>Ready to build the future of quality together?</p>
+                    
+                    <div class="contact-links">
+                        <a href="mailto:reachragavendrans@gmail.com" class="cyber-btn icon-btn"><i class="fa-solid fa-envelope"></i> Email</a>
+                        <a href="https://linkedin.com/in/iamragavendrans" target="_blank" class="cyber-btn icon-btn white"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                        <a href="https://github.com/iamragavendrans" target="_blank" class="cyber-btn icon-btn white"><i class="fa-brands fa-github"></i> GitHub</a>
+                    </div>
+                    
+                    <div class="resume-section">
+                        <p>Fetch the full technical breakdown:</p>
+                        <a href="#" class="cyber-btn resume-btn" id="resume-download">
+                            <i class="fa-solid fa-cloud-arrow-down"></i> Download Latest Resume
+                        </a>
+                        <small style="display:block;margin-top:10px;opacity:0.5;">Note: Configure the exact private repo access token link inside index.html</small>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </div>
+
+    <!-- Modals for Full Experience Details -->
+    <div id="modal-overlay" class="hidden">
+        <div class="modal-box">
+            <button id="close-modal"><i class="fa-solid fa-xmark"></i></button>
+            <div id="modal-content"></div>
+        </div>
+    </div>
+
+    <!-- Hidden Data for Modals -->
+    <div id="resume-data" class="hidden" style="display:none;">
+        <div id="data-infosys">
+            <h2>Infosys Limited</h2>
+            <h3>Test Engineer / Senior Test Automation Executive</h3>
+            <span class="year">Oct 2018 - Jun 2022</span>
+            <ul>
+                <li>Improved build feedback by 30% and reduced manual effort by 70% by owning Appium-based mobile test suites (Android + iOS) validated across device configurations on a large-scale transportation platform across multiple environments.</li>
+                <li>Improved validation efficiency by 12% by implementing Karate API contract tests and log-based validation frameworks for backend data transformations, enabling faster defect resolution across distributed teams working across time zones.</li>
+                <li>Investigated production issues by analyzing application logs, configuration files, and system behaviour, identifying root causes and providing development teams with reproducible findings and suggested fixes.</li>
+                <li>Performed SQL-based backend validation verifying data consistency across ETL pipelines and service databases, flagging schema drift and transformation anomalies before release sign-off.</li>
+                <li>Earned Rising Star Award by self-initiating the transition from manual to automated testing, independently learning and implementing UFT/QTP UI automation scripts on a safety-critical railway platform, directly reducing manual regression effort within the first year.</li>
+                <li>Identified and reported 8% of total project defects with detailed JIRA documentation including reproduction steps, environment details, and suggested fixes, consistently accelerating development team resolution cycles.</li>
+                <li>Executed manual functional testing and managed test suites using HP ALM across a safety-critical railway platform, documenting 18 verified defects with full traceability to requirements and test cases.</li>
+                <li>Supported end-to-end STLC activities including test planning, test case design, execution, and closure, maintaining RTM coverage between business requirements and test execution results.</li>
+            </ul>
+        </div>
+        
+        <div id="data-comcast">
+            <h2>Comcast India Engineering Centre</h2>
+            <h3>Software Development Engineer in Test - 2 & 3</h3>
+            <span class="year">Jun 2022 - Feb 2025</span>
+            <ul>
+                <li>Reduced incident triage time by 40% and partner coordination by 60% by building observability dashboards tracking pipeline failures, third-party vendor issues, and model regressions across a large-scale order fulfillment platform.</li>
+                <li>Eliminated 90% of manual follow-ups for a 25-person cross-functional team by automating partner orchestration and validation workflows across ordering, tracking, and replacement journeys using Power Automate.</li>
+                <li>Reduced compliance overhead by 30-50% by engineering JIRA JQL automation that standardized reporting workflows across multiple squads; earned Sky Stars Award from the platform’s Assurance Lead.</li>
+                <li>Validated data integrity across order fulfilment pipelines using SQL against production and staging databases, catching 15+ data transformation defects pre-release.</li>
+                <li>Scaled automation capability to 3 Agile squads by upskilling 5 engineers from low familiarity to independent framework contributors, eliminating single points of expertise with test execution tracked in Zephyr across all squads.</li>
+                <li>Achieved 50% application coverage by refactoring legacy automation into a production-grade framework using Selenium WebDriver, Java, REST Assured, Appium, TestNG and Cucumber, applying Page Object Model design to stabilize UI and integration tests across 15+ service endpoints with Allure and Extent Reports integrated into Jenkins.</li>
+                <li>Added 30+ end-to-end test scenarios spanning UI, API, and service layers for ordering, tracking, and fulfillment workflows across both web interface and service layers, validated through contract testing and schema assertions.</li>
+            </ul>
+        </div>
+
+        <div id="data-hcl">
+            <h2>HCL Technologies Limited</h2>
+            <h3>Technical Lead</h3>
+            <span class="year">Mar 2025 - Apr 2025</span>
+            <ul>
+                <li>Reduced manual test authoring by 60% by building an LLM-powered test case generator (OpenAI API, FastAPI) that converts feature requirements into structured test scenarios, acceptance criteria, and automation skeletons.</li>
+                <li>Designed QA automation playbooks and integration patterns for ML validation pipelines, producing a technical feasibility report with an adoption roadmap for reducing manual testing effort across future releases.</li>
+            </ul>
+        </div>
+
+        <div id="data-ilink">
+            <h2>iLink Digital</h2>
+            <h3>Test Specialist</h3>
+            <span class="year">Jul 2025 - Present</span>
+            <ul>
+                <li>Reduced flaky tests by 48% and CI build time by 50% by migrating 200+ UI tests from Protractor to Playwright across 10 modules, validating critical screen flows, component interactions, and cross-browser rendering with visual regression checks.</li>
+                <li>Expanded automation coverage to 82% (UI + API) by identifying and incorporating 20+ previously untested scenarios into regression suites, directly reducing defect volume reaching production validation.</li>
+                <li>Cut manual verification by 40%/release by engineering Playwright POM-based validation flows with accessibility checks across login screens, multi-step onboarding forms, and core transactional pages.</li>
+                <li>Conducted performance profiling with JMeter for client reviews, identifying latency bottlenecks across critical API endpoints under concurrent load.</li>
+            </ul>
+        </div>
+        
+        <!-- Nested Project Data -->
+        <div id="data-project-comcast">
+            <h2 style="color:var(--accent-cyan)"><i class="fa-solid fa-rocket"></i> Retention Rocket</h2>
+            <h3>Hackathon Prototype</h3>
+            <span class="year">2024</span>
+            <p style="margin-top:20px; font-size:1.1rem; color:#fff;">Prototyped AI churn prediction on GCP using Gemini & Vertex AI.</p>
+        </div>
+        
+        <div id="data-project-hcl">
+            <h2 style="color:var(--accent-cyan)"><i class="fa-solid fa-flask"></i> AI Test Generator</h2>
+            <p style="margin-top:20px; font-size:1.1rem; color:#fff;">LLM tool (OpenAI API/FastAPI) converting features to test scenarios.</p>
+            <br>
+            <a href="https://github.com/iamragavendrans/test-case-generator" target="_blank" class="cyber-btn white"><i class="fa-brands fa-github"></i> View Repo</a>
+        </div>
+        
+        <div id="data-project-ilink">
+            <h2 style="color:var(--accent-cyan)"><i class="fa-solid fa-database"></i> Test Data Provider</h2>
+            <p style="margin-top:20px; font-size:1.1rem; color:#fff;">Platform generating synthetic datasets, eliminating backend dependencies.</p>
+            <br>
+            <a href="https://github.com/iamragavendrans/simple-test-data-generator" target="_blank" class="cyber-btn white"><i class="fa-brands fa-github"></i> View Repo</a>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
